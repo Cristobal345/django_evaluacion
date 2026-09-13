@@ -2,6 +2,10 @@
 
 Proyecto de la Evaluación Sumativa N° 01 de Programación Back End. Implementa dos aplicaciones Django independientes, cada una con dos vistas HTML funcionales:
 
+**Alumno:** Cristobal Montecinos  
+**Repositorio:** https://github.com/Cristobal345/django_evaluacion  
+**Colaborador solicitado:** `larriag13`
+
 - `catalogo/`: inicio del catálogo e inventario de productos.
 - `agenda/`: agenda diaria y resumen semanal.
 
@@ -24,6 +28,8 @@ Rutas disponibles:
 ## Flujo Git de la evaluación
 
 Las ramas de trabajo solicitadas son `montecinoscristobalrama1` y `montecinoscristobalrama2`. La primera representa el desarrollo de `catalogo` y la segunda el de `agenda`; ambas deben publicarse y fusionarse mediante Pull Requests hacia `main` en GitHub.
+
+Estado de entrega: las ramas y `main` están publicadas en GitHub. Para completar el criterio de Pull Requests, deben abrirse los enlaces de comparación de cada rama contra `main` y fusionarse desde GitHub.
 
 ### Rama 1: `montecinoscristobalrama1`
 
