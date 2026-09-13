@@ -25,6 +25,10 @@ Rutas disponibles:
 
 Las ramas de trabajo solicitadas son `montecinoscristobalrama1` y `montecinoscristobalrama2`. La primera representa el desarrollo de `catalogo` y la segunda el de `agenda`; ambas deben publicarse y fusionarse mediante Pull Requests hacia `main` en GitHub.
 
+### Rama 1: `montecinoscristobalrama1`
+
+Incluye la aplicación `catalogo`, con las vistas `catalogo:inicio` y `catalogo:productos`, sus templates, estilos y pruebas de integración.
+
 Antes de realizar commits, configura tu identidad local:
 
 ```powershell
