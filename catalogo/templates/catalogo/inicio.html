@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}Catálogo{% endblock %}
+{% block content %}
+<section class="hero hero-catalogo">
+    <div>
+        <p class="eyebrow">APP CATÁLOGO / VISTA INICIO</p>
+        <h1>Objetos útiles para trabajar mejor.</h1>
+        <p class="hero-copy">Una selección breve de herramientas para ordenar tus ideas y construir días más fluidos.</p>
+        <a class="button" href="{% url 'catalogo:productos' %}">Revisar inventario <span>→</span></a>
+    </div>
+    <div class="hero-mark">01</div>
+</section>
+<section class="section-shell">
+    <div class="section-heading"><div><p class="eyebrow">SELECCIÓN ACTUAL</p><h2>Destacados</h2></div><span class="section-note">03 artículos</span></div>
+    <div class="product-grid">
+        {% for producto in productos %}
+        <article class="product-card"><span class="card-number">0{{ forloop.counter }}</span><p>{{ producto.categoria }}</p><h3>{{ producto.nombre }}</h3><strong>{{ producto.precio }}</strong></article>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

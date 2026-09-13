@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block title %}Inventario{% endblock %}
+{% block content %}
+<section class="page-intro"><p class="eyebrow">APP CATÁLOGO / VISTA INVENTARIO</p><h1>Inventario claro,<br><em>decisiones rápidas.</em></h1><p>Consulta el estado de cada artículo desde una vista simple y accionable.</p></section>
+<section class="section-shell table-shell"><div class="section-heading"><div><p class="eyebrow">CONTROL DE STOCK</p><h2>Productos registrados</h2></div><span class="section-note">{{ inventario|length }} registros</span></div>
+<div class="inventory-list">{% for item in inventario %}<div class="inventory-row"><span class="row-index">0{{ forloop.counter }}</span><h3>{{ item.nombre }}</h3><span class="stock">{{ item.stock }} unidades</span><span class="status {% if item.stock == 0 %}status-off{% endif %}">{{ item.estado }}</span></div>{% endfor %}</div></section>
+{% endblock %}

@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% block title %}Agenda{% endblock %}
+{% block content %}
+<section class="hero hero-agenda"><div><p class="eyebrow">APP AGENDA / VISTA INICIO</p><h1>Haz espacio para lo importante.</h1><p class="hero-copy">Tu día, organizado en bloques que se pueden leer de un vistazo.</p><a class="button" href="{% url 'agenda:semana' %}">Ver resumen semanal <span>→</span></a></div><div class="date-tile"><strong>13</strong><span>SEP<br>2026</span></div></section>
+<section class="section-shell"><div class="section-heading"><div><p class="eyebrow">HOY · DOMINGO 13</p><h2>Próximos bloques</h2></div><span class="section-note">{{ eventos|length }} eventos</span></div><div class="event-list">{% for evento in eventos %}<article class="event-row"><time>{{ evento.hora }}</time><div><h3>{{ evento.titulo }}</h3><p>{{ evento.tipo }}</p></div><span class="event-dot"></span></article>{% endfor %}</div></section>
+{% endblock %}

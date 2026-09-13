@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% block title %}Resumen semanal{% endblock %}
+{% block content %}
+<section class="page-intro"><p class="eyebrow">APP AGENDA / VISTA SEMANA</p><h1>Una semana<br><em>con intención.</em></h1><p>Distribuye tu energía y detecta dónde está el foco de los próximos días.</p></section>
+<section class="section-shell week-shell"><div class="section-heading"><div><p class="eyebrow">RESUMEN DE CARGA</p><h2>Próxima semana</h2></div><span class="section-note">12 eventos</span></div><div class="week-grid">{% for dia in dias %}<article class="day-card"><span>{{ forloop.counter|stringformat:"02d" }}</span><h3>{{ dia.dia }}</h3><strong>{{ dia.cantidad }}</strong><p>{{ dia.foco }}</p></article>{% endfor %}</div></section>
+{% endblock %}
