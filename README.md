@@ -29,6 +29,10 @@ Las ramas de trabajo solicitadas son `montecinoscristobalrama1` y `montecinoscri
 
 Incluye la aplicación `catalogo`, con las vistas `catalogo:inicio` y `catalogo:productos`, sus templates, estilos y pruebas de integración.
 
+### Rama 2: `montecinoscristobalrama2`
+
+Incluye la aplicación `agenda`, con las vistas `agenda:inicio` y `agenda:semana`, sus templates, estilos y pruebas de integración.
+
 Antes de realizar commits, configura tu identidad local:
 
 ```powershell
